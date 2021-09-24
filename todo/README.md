@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# ToDo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This is an app to create a list of tasks. The user can assign task to different people and update the details of the task.
+Visual Preview and User Flow
 
-## Available Scripts
+## Screens
+### Home Screen:
+Displays the added tasks with color coding. Tasks which are done are green, pending are yellow and blocked are red.
+ 
 
-In the project directory, you can run:
+### Edit Screen:
+By clicking on Edit button on any task following form open up, with details of the task. User can edit the details and save. Close button will close the pop-up.
+ 
+### Details Screen:
+By clicking on the Details button, a pop up with all the details of the task, like description, will open.
+Close button will close the pop-up.
+ 
 
-### `npm start`
+### Delete Screen:
+Delete button on the task will open the delete confirmation screen as shown  below. Clicking ‘Yes’ will delete the task. ‘Close’ will close the pop-up.
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Validations
+•	All the fields in the ‘Add Task’ form are required.
+•	All the fields except description in ‘Edit Task’ form are required.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Libraries and Packages
+•	React – 17.0.2
+•	React Testing Library
+•	Lodash 
+•	React Lazy
+•	Tailwind CSS
 
-### `npm run build`
+## Unit Test
+Unit tests for “TodoCreate” component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running The Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Download and unzip the app folder. There are two folders in the root folder:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### server: 
+This is a simple json server to store the todo data.
 
-### `npm run eject`
+### client: 
+This folder contains the app frontend code.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Following are the steps to run the application
+  1.	Browse to the server folder in command window. Run ‘npm start’.
+  2.	Browse to the client folder in another command window. 
+  3.	Run ‘npm install’ to install all the dependencies.
+  4.	Run ‘npm start’. This will load the app in browser at localhost:3000.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run unit tests, run "npm test" command.
+  
+## Future Enhancements and Improvements:
+  1.	Add ‘Created Date’ field in tasks.
+  2.	More unit test coverage
+  3.	Improve validation messages. Messages can be customized based on the error.
+  4.	Provide options to sort the tasks based on created date / due date.
+  5.	Provide option to group the tasks based on status
