@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "title": "Learn ReactJS",
+      "description": "",
+      "assignee": "Sanjalee Patni",
+      "dueDate": "2021-08-21",
+      "status": "Done",
+      "id": 1
+    },
+    {
+      "title": "Learn NodeJS",
+      "description": "",
+      "assignee": "Sanjalee Patni",
+      "dueDate": "2021-08-21",
+      "status": "Pending",
+      "id": 2
+    },
+    {
+      "title": "Learn Yoga",
+      "description": "",
+      "assignee": "Sanjalee Patni",
+      "dueDate": "2021-08-21",
+      "status": "Blocked",
+      "id": 3
+    }
+  ]
+}
