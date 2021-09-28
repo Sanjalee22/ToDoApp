@@ -7,7 +7,7 @@ const TodoManager = () => {
 
 	useEffect(() => {
 		fetchAllTodos();
-	}, []);
+	}, [fetchAllTodos]);
 
 	return (
 		<div>
